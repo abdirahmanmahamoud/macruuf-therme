@@ -1,0 +1,146 @@
+/*
+Theme Name: Macruuf
+Text Domain: macruuf
+Version: 1.0
+Tested up to: 6.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: hadaad rabtid in aad isticmaashid therme kan halkaan kala lasoo dag kadib ku shubo wordpress website kaaga kadib ka badbadalo Customize kalarka iyo sawirada waxa kalo ka badali krtaa display qaybta ah none ayaaa ka dhigi kartaa block
+Author: Abdirahman mahamoud
+Author URI: https://macruuftech.com/
+Theme URI: https://github.com/abdirahmanmahamoud/macruuf-therme
+*/
+
+@import url('assets/css/all-style.css');
+@import url('assets/icons/all.min.css');
+
+.logo{
+    text-decoration: none;
+    color: var(--black);
+}
+.logo h1{
+    font-weight: 500;
+    cursor: pointer;
+}
+.pages{
+    margin-top: 40px;
+    padding-left: 6%;
+    padding-right: 5%;
+}
+.pages h3{
+    font-size: 26px;
+    color: var(--black);
+}
+.pages p{
+    font-size: 18px;
+    margin-top: 30px;
+    color: var(--black);
+}
+.pages  a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.pages  a:hover{
+    color: var(--secondary-color);
+}
+.category-info{
+    margin-top: 40px;
+    padding-left: 6%;
+    padding-right: 5%;
+}
+.category-info h3{
+    font-size: 26px;
+    color: var(--black);
+}
+.category-info .span{
+    width: 30px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+.category-info .cat-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 17px;
+    margin-top: 25px;
+    background-color: var(--white);
+}
+.category-info .cat-row .cat-box{
+    width: 380px;
+    box-shadow: 0 0 0.5rem #090a0a7a;
+    padding: 10px;
+}
+.category-info .cat-row .cat-box:hover{
+    box-shadow: 0 0 0.9rem #090a0a7a;
+}
+.category-info .cat-row .cat-box .cat-img{
+    width: 100%;
+    height: 220px;
+}
+.category-info .cat-row .cat-box .cat-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+.category-info .cat-row .cat-box .cat-info{
+    margin-top: 6px;
+}
+.category-info .cat-row .cat-box .cat-info a{
+    text-decoration: none;
+    color: var(--black);
+}
+.category-info .cat-row .cat-box .cat-info a h2{
+    font-size: 25px;
+}
+.category-info .cat-row .cat-box .cat-info .text-post{
+    margin-top: 7px;
+    color: var(--black);
+    font-size: 0.875rem;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.category-info .cat-row .cat-box .cat-info .cat-date-admin{
+    margin: 8px 0;
+}
+.category-info .cat-row .cat-box .cat-info .cat-date-admin samp{
+    font-size: 18px;
+}
+.category-info .cat-row .cat-box .cat-info .cat-date-admin samp i{
+    font-size: 18px;
+    margin-left: 3px;
+}
+.category-info .cat-row .cat-box .cat-info .cat-date-admin .date{
+    margin-left: 6px;
+}
+.no404{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: #ff0000;
+}
+@media (max-width: 769px){
+
+    .category-info .cat-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .category-info .cat-row .cat-box{
+        width: 48%;
+    }
+}
+@media (max-width: 477px){
+    .category-info .cat-row .cat-box{
+        width: 100%;
+    }
+}
